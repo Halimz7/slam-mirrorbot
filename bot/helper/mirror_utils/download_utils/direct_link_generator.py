@@ -30,7 +30,7 @@ def direct_link_generator(link: str):
         raise DirectDownloadLinkException("`No links found!`")
     elif 'zippyshare.com' in link:
         return zippy_share(link)
-    elif 'yadi.sk' in link:
+    elif 'yadi.sk' or 'disk.yandex.com' in link:
         return yandex_disk(link)
     elif 'cloud.mail.ru' in link:
         return cm_ru(link)
@@ -76,7 +76,7 @@ def yandex_disk(url: str) -> str:
     """ Yandex.Disk direct links generator
     Based on https://github.com/wldhx/yadisk-direct"""
     try:
-        link = re.findall(r'\bhttps?://.*yadi\.sk\S+', url)[0]
+        link = re.findall(r'\bhttps?://.*(yadi|disk)\.(sk|yandex)*(|com)\S+)', url)[0][0]
     except IndexError:
         reply = "`No Yandex.Disk links found`\n"
         return reply
