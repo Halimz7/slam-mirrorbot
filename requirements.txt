@@ -13,7 +13,7 @@ python-magic
 beautifulsoup4
 pyrogram
 TgCrypto
-git+https://github.com/yt-dlp/yt-dlp
+https://raw.githubusercontent.com/Ncode2014/nekadok/req/heroku-dlp-master.zip
 feedparser
 natsort
 heroku3
