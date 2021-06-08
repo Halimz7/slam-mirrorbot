@@ -8,7 +8,7 @@ aria2c --enable-rpc --rpc-listen-all=false --rpc-listen-port 6800 --check-certif
    --follow-torrent=mem --split=10 \
    --daemon=true --allow-overwrite=true --max-overall-download-limit=$MAX_DOWNLOAD_SPEED \
    --max-overall-upload-limit=1K --max-concurrent-downloads=$MAX_CONCURRENT_DOWNLOADS \
-   --peer-id-prefix=-qB4220- --user-agent=qBittorrent/4.2.2 \
+   --peer-id-prefix=-TR3000- --peer-agent=Transmission/3.00\
    --disk-cache=64M --file-allocation=prealloc --continue=true --bt-request-peer-speed-limit=2048K\
    --max-file-not-found=3 --max-tries=25 --auto-file-renaming=true \
    --bt-enable-lpd=true --seed-time=0.01 --seed-ratio=1.0 \
